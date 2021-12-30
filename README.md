@@ -36,7 +36,8 @@ Aula 30 – de parent component para child component
 Aula 31 –  Usando um Alias no @Input  
 Aula 32 – Custom Events Binding  
 Aula 33 – Custom Events Binding - comunicando valores  
-Aulas 34 e 35 – Jogo matemático com Angular  
+Aula 34 – Jogo matemático com Angular - Parte 1  
+Aula 35 – Jogo matemático com Angular - Parte 2  
 Aula 36 – Compreendendo o CSS e View Encapsulation  
 Aula 37 – Utilização de Local References  
 Aula 38 – Acesso a elementos da DOM com ViewChild  
