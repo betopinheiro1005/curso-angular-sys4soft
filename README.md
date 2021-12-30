@@ -3,15 +3,15 @@
 
 ### Lista de aulas - [Vídeos do curso](https://www.youtube.com/watch?v=KZrMuOEk1cE&list=PLXik_5Br-zO9Rly_0vxD4p1TF8z7p6Dx5)
 
-Aula 1 - Introdução  
-Aula 2 - Instalação do software necessário  
-Aula 3 – Criação do primeiro projeto de Angular  
-Aula 4 – Breve análise - funcionamento do Angular  
-Aula 5 – Criando o primeiro component  
-Aula 6 – Exercício prático de criação de components  
-Aula 7 – Criar componentes com a CLI  
-Aula 8 – Nesting Components e Component Templates  
-Aula 9 – Utilizar o Bootstrap no Angular  
+Aula 01 - Introdução  
+Aula 02 - Instalação do software necessário  
+Aula 03 – Criação do primeiro projeto de Angular  
+Aula 04 – Breve análise - funcionamento do Angular  
+Aula 05 – Criando o primeiro component  
+Aula 06 – Exercício prático de criação de components  
+Aula 07 – Criar componentes com a CLI  
+Aula 08 – Nesting Components e Component Templates  
+Aula 09 – Utilizar o Bootstrap no Angular  
 Aula 10 – Utilização de CSS nos Components  
 Aula 11 – Uma atenção especial ao elemento Selector  
 Aula 12 – Databinding – String Interpolation  
