@@ -1,0 +1,31 @@
+<!-- Aula 25 -->
+
+<!-- <h3>Loja</h3> -->
+
+<!-- ---------------------------------------------------------- -->
+
+<!-- Aula 27 -->
+
+<div class="panel panel-default espaco">
+    
+    <!-- Título -->
+    <div><h3>LOJA</h3></div>
+
+    <!-- Conteúdo dinâmico -->
+    <div class="row">
+      <i *ngFor="let produto of produtos">
+        <div class="col-xs-3">
+          <img src="../assets/{{ produto.icon }}"><span>{{ produto.nome}}</span>
+        </div>
+      </i>
+    </div>
+
+    <!-- Botões -->
+    <div class="text-right">
+      <button class="btn btn-success" (click)="AdicionarAnanas()">+ Ananás</button>
+      <button class="btn btn-success" (click)="AdicionarBanana()">+ Banana</button>
+      <button class="btn btn-success" (click)="AdicionarLaranja()">+ Laranja</button>
+    </div>
+
+</div>
+

@@ -1,0 +1,50 @@
+<!-- Aula 25 -->
+
+<!-- <h3>Stock</h3> -->
+
+<!-- ---------------------------------------------------------- -->
+
+<!-- Aula 28 -->
+
+<div class="panel panel-default espaco-stock">
+
+    <div class="row">
+        <h3>STOCK</h3>
+    </div>
+
+    <!-- Quantidades de Produtos -->
+
+    <div class="row">
+        <p [ngStyle]="{color: EstiloAnanases()}">Ananases: {{ total_ananases }} </p>
+    </div>
+
+    <div class="row">
+        <p [ngStyle]="{color: EstiloBananas()}">Bananas: {{ total_bananas }} </p>
+    </div>
+
+    <div class="row">
+        <p [ngStyle]="{color: EstiloLaranjas()}">Laranjas: {{ total_laranjas }} </p>
+    </div>
+
+    <!-- Total dos Produtos -->
+
+    <div class="row">
+        <p>TOTAL: {{ Calcular_Total() }} </p>
+    </div>
+
+    <!-- Botões -->
+
+    <div class="text-right">
+
+        <button class="btn btn-success" (click)="AdicionarAnanas()">+ Ananás</button>
+        <button class="btn btn-success" (click)="RemoverAnanas()">- Ananás</button>
+
+        <button class="btn btn-success" (click)="AdicionarBanana()">+ Banana</button>
+        <button class="btn btn-success" (click)="RemoverBanana()">- Banana</button>
+
+        <button class="btn btn-success" (click)="AdicionarLaranja()">+ Laranja</button>
+        <button class="btn btn-success" (click)="RemoverLaranja()">- Laranja</button>
+
+    </div>
+
+</div>

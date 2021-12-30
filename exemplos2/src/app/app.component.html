@@ -1,0 +1,271 @@
+<!-- Aula 29 -->
+
+<!-- <div class="container panel panel-default espaco">
+
+    <p>{{ operacao.str_operacao }} {{ operacao.resultado }}</p>
+    <button (click)="CriarOperacao()" class="btn btn-primary">Criar Operação</button>
+
+</div>
+ -->
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 30 -->
+
+<!-- <div class="container panel panel-default espaco">
+    <app-socios [nome]='novo_nome'></app-socios>
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- <div class="container panel panel-default espaco">
+    <app-socios></app-socios>
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- <div class="container panel panel-default espaco">
+    <app-socios [socios]='novos_socios'></app-socios>
+</div>
+ -->
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 31 -->
+
+<!-- <div class="container panel panel-default espaco">
+    <app-socios [nome_novo]='valor'></app-socios>
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 32 -->
+
+<!-- <div class="container panel panel-default espaco">
+
+    <app-meu (evento)="Escuta()"></app-meu>
+
+    <p>{{ info }}</p>
+
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 33 -->
+
+<!-- <div class="container panel panel-default espaco">
+
+    <app-meu (evento)="Escuta($event)"></app-meu>
+
+    <p>{{ info }}</p>
+
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aulas 34 e 35 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+        <app-jogo (resposta_final)="AvaliarResposta($event)"></app-jogo>
+
+        <div class="text-center">
+            <h2>{{ resposta }}</h2>
+            <div class='text-center'>
+                <h3>Certas: {{ respostas_certas }} | Erradas: {{ respostas_erradas}}</h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 36 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+        <p>Componente principal</p>
+        <app-comp1></app-comp1>
+        <app-comp2></app-comp2>
+    </div>
+</div>
+ -->
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 37 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+        <input type="text" #elementoInput>
+        <button (click)=AlterarTexto(elementoInput,paragrafo)>Clicar</button>
+        <p class="alert alert-danger" #paragrafo>{{valor}}</p>
+    </div>
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 38 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+        <input type="text" #meuInput>
+        <button (click)=Executar(meuInput)>Clicar</button>
+        <p class="alert alert-danger" #meuParagrafo>{{valor}}</p>
+    </div>
+</div>
+ -->
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 39 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+        <app-noticia>
+            {{texto}}
+            <p>Autor: admin</p>
+        </app-noticia>
+    </div>
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 41 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+        <div *ngFor="let evento of eventos">
+            <p>{{evento}}</p>
+        </div>
+        <p>{{texto}}</p>
+        <button (click)="executar()">Clicar</button>
+    </div>
+</div>
+ -->
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 42 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+
+        <app-teste [valor]="novo_valor"></app-teste>
+
+    </div>
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 43 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+        <ul class="list-group" *ngIf="ver">
+            <li class="list-group-item" *ngFor="let nome of nomes">
+                {{nome}}
+            </li>
+        </ul>
+
+        <hr>
+
+        <button class="btn btn-default" (click)="ver = !ver">Clicar</button>
+
+    </div>
+</div>
+ -->
+
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 44 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+        <ul class="list-group" *ngIf="ver">
+            <li class="list-group-item" 
+            [ngClass]="{'cor-fundo':vercss}" 
+            [ngStyle]="{'color':vercss == true ? 'red' : 'black'}"
+            *ngFor="let nome of nomes">
+                {{nome}}
+            </li>
+        </ul>
+
+        <hr>
+
+        <button class="btn btn-default" (click)="ver = !ver">Clicar</button>
+        <button class="btn btn-default" (click)="vercss = !vercss">CSS</button>
+    </div>
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 45 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+        <ul class="list-group" *ngIf="ver">
+            <li class="list-group-item" [ngClass]="{'cor-fundo':vercss}" [ngStyle]="{'color':vercss == true ? 'red' : 'black'}"
+                *ngFor="let nome of nomes">
+                {{nome}}
+            </li>
+        </ul>
+
+        <hr>
+
+        <button class="btn btn-default" (click)="ver = !ver">Clicar</button>
+        <button class="btn btn-default" (click)="vercss = !vercss">CSS</button>
+
+        <hr>
+        <p minhaDirective>Este texto está em negrito.</p>
+
+    </div>
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 46 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+
+        <p minhaDirective>Este texto está em negrito.</p>
+
+        <p appNovaDirective>Este texto tem nova formatação.</p>
+
+    </div>
+</div> -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 47 -->
+
+<!-- <div class="container">
+    <div class="panel panel-default espaco">
+        <p minhaDirective>Este texto está em negrito.</p>
+        <p class='pad' appNovaDirective>Este texto tem nova formatação.</p>
+    </div>
+</div>
+ -->
+
+<!-- --------------------------------------------------------- -->
+
+<!-- Aula 48 -->
+
+<div class="container">
+        <div class="panel panel-default espaco">
+            <p minhaDirective>Este texto está em negrito.</p>
+            <p class='pad'>Este texto tem nova formatação.</p>
+
+            <input type="text" appNovaDirective />
+
+        </div>
+    </div>

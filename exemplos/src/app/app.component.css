@@ -1,0 +1,30 @@
+.espaco{
+    margin: 20px;
+    padding: 20px;
+}
+
+/* p{
+    color: blue;
+}
+ */
+
+/* .cor1{
+    color: blue;
+}
+ */
+
+input[type=text]{
+    padding: 10px;
+}
+
+button {
+    margin: 10px;
+}
+
+.ativo {
+    opacity: 1;
+    font-weight: bold;
+}
+.inativo {
+    opacity: 0.2;
+}

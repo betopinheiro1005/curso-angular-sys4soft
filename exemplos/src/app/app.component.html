@@ -1,0 +1,219 @@
+<div class="container">
+
+    <!-- Component socio -->
+
+    <!--     <h3>Este é o componente base</h3>
+    <hr>
+    <app-socio></app-socio>
+ -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Component clube -->
+
+    <!--  <h3>Este é o componente base</h3>
+    <hr />
+    <app-clube></app-clube> -->
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Bootstrap -->
+
+    <!-- <h3>Este é o componente base</h3> -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- CSS nos componentes -->
+
+    <!-- <div class="container panel panel-default">
+        <h3 class="cor1">Este é o componente base</h3>
+     </div> -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 12 -->
+
+    <!--     <div class="panel panel-default espaco">
+        <h3>O meu nome é {{nome}} {{sobrenome}} e tenho {{idade}} anos</h3>
+    </div>
+ -->
+
+    <!--     <div class="panel panel-default espaco">
+        <h3>O meu nome é {{nomeCompleto()}} e tenho {{idade}} anos</h3>
+    </div>
+ -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 13 -->
+
+    <!--     <div class="panel panel-default espaco">
+        <input type="text" [disabled]="inativo" [placeholder]="texto"><br /><br />
+        <button class="btn btn-primary" [disabled]="inativo">Executar</button>
+    </div>
+ -->
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 14 -->
+
+    <!--     <div class="panel panel-default espaco">
+        <button class="btn btn-primary" (click)="onClick()">Clicar</button>
+        <button class="btn btn-primary" [disabled]="inativo">Outro botão</button>
+        <p>{{texto}}</p>
+    </div>
+ -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 15 -->
+
+    <!--     <div class="panel panel-default espaco">
+        <div class="row">
+            
+            <div class="col-sm-4 text-center">
+                <p>Ativa e inativa os outros comandos</p>
+                <button class="btn btn-primary" (click)="cmd1_Click()">{{texto_cmd1}}</button>
+            </div>
+            
+            <div class="col-sm-4 text-center">
+                <p>Altera o texto dos comandos para '...'</p>
+                <button class="btn btn-primary" (click)="cmd2_Click()" [disabled]="cmd2_inativo">{{texto_cmd2}}</button>
+            </div>
+            
+            <div class="col-sm-4 text-center">
+                <p>Coloca o texto original nos comandos</p>
+                <button class="btn btn-primary" (click)="cmd3_Click()" [disabled]="cmd3_inativo">{{texto_cmd3}}</button>
+            </div>
+        </div>
+    </div>
+ -->
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 16 -->
+
+    <!--      <div class="panel panel-default espaco">
+            <button class="btn btn-default" (click)="btn_Click($event)">Clicar</button>
+            <input type="text" id="text_texto" name="text_texto" (input)="teclaPressionada($event)">
+            <p>{{valor}}</p> 
+     </div>
+ -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 17 -->
+
+    <!--     <div class="panel panel-default espaco">
+        <p>{{texto}}</p>
+        <button class="btn btn-primary" (click)="clicar($event)" (mouseover)="mouseover($event)" (mousemove)="mousemove($event)">EXPERIMENTAR
+            ESTE BOTÃO</button>
+
+        <input type="text" id="text" name="text" (input)="executar($event)">
+
+    </div>
+ -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 18 -->
+
+    <!-- div class="panel panel-default espaco"> -->
+    <!-- <input type="text" class="form-control" (input)="text_Changed($event)"> -->
+
+    <!--         <input type="text" class="form-control" [(ngModel)]="valor">
+        <p>{{ valor }}</p>
+        <button class="btn btn-primary" (click)="alterarTexto()">Clicar</button>
+    </div>
+ -->
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 19 -->
+
+    <!--     <div class="panel panel-default espaco">
+            <p *ngIf="apresentar">Este é um parágrafo.</p>
+            <button class="btn btn-primary"  (click)="btn_Click()">{{ texto_botao }}</button>
+    </div>
+ -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 20 -->
+
+    <!--     <div class="panel panel-default espaco">
+        <p *ngIf="apresentar; else outroParagrafo">Este é o parágrafo um.</p>
+
+        <ng-template #outroParagrafo>
+            <h3>Este é o parágrafo dois.</h3>
+        </ng-template>
+
+        <button class="btn btn-primary" (click)="btn_Click()">Clicar</button>
+    </div>
+ -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 21 -->
+
+    <!--     <div class="panel panel-default espaco">
+        <div [ngStyle]="{'color':cor_texto1,backgroundColor:cor_fundo1,'padding':'5px'}">
+            <span>Texto da caixa 1</span>
+        </div>
+
+        <br />
+
+        <div [ngStyle]="{'color':cor_texto2,backgroundColor:cor_fundo2,'padding':'5px'}">
+            <span>Texto da caixa 2</span>
+        </div>
+
+        <br />
+
+        <button class="btn btn-default" (click)="btn_Click1()">Alterar cor 1</button>
+        <button class="btn btn-default" (click)="btn_Click2()">Alterar cor 2</button>
+
+    </div>
+ -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 22 -->
+
+    <!--     <div class="panel panel-default espaco">
+        <p [ngStyle]="alterarEstilo()">Texto de um parágrafo.</p>
+
+        <p [ngClass]="{ativo: estado === true, inativo: estado === false}">Novo parágrafo.</p>
+        <button class="btn btn-primary" (click)="Alternar()">{{ estado }}</button>
+    </div>
+ -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- Aula 23 -->
+
+    <div class="panel panel-default espaco">
+        <p *ngFor="let nome of lista_nomes">
+            {{ nome }}
+        </p>
+
+        <div class="alert alert-success" *ngFor="let nome of lista_nomes">
+            <p>{{ nome }}</p>
+        </div>
+
+        <div *ngFor="let nome of lista_nomes; let indice = index">
+            <p>{{ indice }}</p>
+        </div>
+    </div>>
+
+    <!-- ------------------------------------------------------ -->
+
+
+
+
+
+    <!-- Component comp1 e comp2 -->
+
+    <!--     <div class="panel panel-default espaco">
+        <p>Componente principal</p>
+        <app-comp1></app-comp1>
+        <app-comp2></app-comp2>
+    </div>
+ -->
+
+</div>
